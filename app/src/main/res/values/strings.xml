@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Polares</string>
+    <string name="min_polares_restaurang">Min polares restaurang</string>
+    <string name="f_menu">Förrätter</string>
+    <string name="h_menu">Huvudrätter</string>
+    <string name="e_menu">Efterrätter</string>
 </resources>
