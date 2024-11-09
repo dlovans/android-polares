@@ -18,7 +18,9 @@
         android:textSize="@dimen/l_text"
         />
 
+<!--    Menu -->
     <LinearLayout
+        android:id="@+id/menu_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -48,6 +50,149 @@
             android:layout_weight="1"
             android:text="@string/e_menu"
             />
+    </LinearLayout>
+
+<!--    Card container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/xs_margin"
+        android:layout_marginTop="@dimen/l_margin"
+        app:layout_constraintTop_toBottomOf="@+id/menu_container"
+        android:layout_marginHorizontal="@dimen/xs_margin"
+
+        >
+
+
+<!--        Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/xs_margin"
+            android:layout_marginBottom="@dimen/s_margin"
+            app:strokeColor="@color/img_blue"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/fake_img_one"
+                    android:layout_width="150dp"
+                    android:layout_height="@dimen/l_density"
+                    android:layout_weight="1"
+                    android:background="#1E2F76" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kebabtallrik"
+                        android:layout_marginEnd="@dimen/s_margin"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lorem"
+                    />
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--        Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/xs_margin"
+            android:layout_marginBottom="@dimen/s_margin"
+            app:strokeColor="@color/img_blue">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/fake_img_two"
+                    android:layout_width="150dp"
+                    android:layout_height="@dimen/l_density"
+                    android:layout_weight="1"
+                    android:background="@color/img_blue" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kebabtallrik"
+                        android:layout_marginEnd="@dimen/s_margin"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lorem"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--        Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/xs_margin"
+            android:layout_marginBottom="@dimen/s_margin"
+            app:strokeColor="@color/img_blue">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/fake_img_three"
+                    android:layout_width="150dp"
+                    android:layout_height="@dimen/l_density"
+                    android:layout_weight="1"
+                    android:background="#1E2F76" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kebabtallrik"
+                        android:layout_marginEnd="@dimen/s_margin"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lorem"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
